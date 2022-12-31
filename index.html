@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Clock</title>
+
+    <link
+      rel="stylesheels"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="stopWatch">00:00:00</div>
+
+      <div>
+        <button type="button" class="btn btn-secondary startButton">
+          Start
+        </button>
+        <button type="button" class="btn btn-secondary pauseButton">
+          pause
+        </button>
+        <button type="button" class="btn btn-secondary continueButton">
+          continue
+        </button>
+        <button type="button" class="btn btn-secondary restartButton">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-color: rgb(92, 86, 86);
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .stopWatch {
+        color: white;
+        font-size: 200px;
+        font-weight: bold;
+      }
+      button {
+        margin: 10px;
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
